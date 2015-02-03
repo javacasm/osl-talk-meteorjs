@@ -3,14 +3,12 @@
 </head>
 
 <body>
-  <h1>Meteor</h1>
-  {{> principios}}
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
 </body>
 
-<template name="principios">
-  <ul>
-  {{#each idea}}
-    <li>{{body}}</li>
-  {{/each}}
-  </ul>
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
 </template>
