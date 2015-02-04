@@ -3,12 +3,38 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  {{> page}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<!--
+  Template helpers are available under double curly braces
+  just like the handlebars template engine.
+
+  But these templates are reactive.
+  Any changes in data will re-render them.
+-->
+
+<template name="page">
+  {{#unless title}}
+    <h1>Do something</h1>
+  {{/unless}}
+  <section>
+    <h2 contentEditable=true>
+      {{#if title}}
+        {{title}}
+      {{else}}
+        No title
+      {{/if}}
+    </h2>
+    <p contentEditable=true style="white-space: no-wrap">
+      {{#if body}}
+        {{body}}
+      {{else}}
+        No body
+      {{/if}}
+    </p>
+    {{#if date}}
+      <span>Last modification: {{date}}</span>
+    {{/if}}
+  </section>
 </template>
