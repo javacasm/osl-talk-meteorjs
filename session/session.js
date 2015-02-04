@@ -1,23 +1,37 @@
+//
+// Session is a localStorage backed reactive key-value store
+// works hand in hand with deps, although it can be used
+// as a trigger for other computations
+//
+
+
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault("counter", 0);
+  //
+  // We wrap the code in Meteor.startup
+  // so its run after all the script tags are loaded
+  //
+  Meteor.startup(function(){
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get("counter");
-    }
-  });
+    Session.setDefault('count', 0);
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set("counter", Session.get("counter") + 1);
-    }
+    Deps.autorun(function(){
+      document.body.textContent =
+        'count ' + Session.get('count');
+    });
+
+    setInterval(function(){
+      var count = Session.get('count');
+      Session.set('count', count+1);
+    }, 1000);
+
   });
+  //
+  // Session is persistent through page loads as well
+  // try to play with the code here and look at the
 }
 
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
+  //
+  // Session is not available on the server
+  //
 }
