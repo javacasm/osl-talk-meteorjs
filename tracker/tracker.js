@@ -1,23 +1,23 @@
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault("counter", 0);
+//
+// Tracker, or Deps (as was called before),
+// is a dependency tracking system which allows
+// reactive code to come alive
+//
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get("counter");
-    }
-  });
+var dep = { value: null };
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set("counter", Session.get("counter") + 1);
-    }
-  });
+var computation = Deps.autorun(function(){
+  console.log(dep);
+});
+
+function compute(){
+  dep.value = 'weird awesome thing';
 }
 
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+//
+// ivalidates previous
+// value of computation
+//
+computation.invalidate();
+
+compute();
