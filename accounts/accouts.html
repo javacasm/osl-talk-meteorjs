@@ -1,0 +1,12 @@
+<body>
+  {{> loginButtons}}
+  <section>
+    {{> users}}
+  </section>
+</body>
+
+<template name="users">
+  {{#each user}}
+    {{json this}}
+  {{/each}}
+</template>
