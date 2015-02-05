@@ -6,7 +6,7 @@ Template.list.helpers({
     if(search.trim()){
       search = new RegExp(search, 'i');
       var result = DB.find({name: {$regex: search}});
-      return result.count() ? result : result;
+      return result.count() ? result : DB.find();
     } else {
       return DB.find();
     }
