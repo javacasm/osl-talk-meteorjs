@@ -4,9 +4,13 @@ Template.list.helpers({
   comedian: function(){
     var search = Session.get('search') || '';
     if(search.trim()){
-      search = new RegExp(search, 'i');
-      var result = DB.find({name: {$regex: search}});
-      return result.count() ? result : DB.find();
+      try {
+        search = new RegExp(search, 'i');
+        var result = DB.find({name: {$regex: search}});
+        return result.count() ? result : DB.find();
+      } catch(err){
+        return DB.find();
+      }      
     } else {
       return DB.find();
     }
