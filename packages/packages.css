@@ -1,1 +1,26 @@
 /* CSS declarations go here */
+
+body {
+  color: #222;
+  background: rgba(0,0,0,0.3);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+  display: inline;
+  border-radius: 8px;
+  border: 2px solid #222;
+  background: indigo;
+}
+
+a {
+  color: white;
+  font-size: 24px;
+}

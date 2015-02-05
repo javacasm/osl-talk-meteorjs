@@ -3,12 +3,19 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <h1>These packages come by default with Meteor</h1>
+  <h3>click to see their location on the Meteor repository</h3>
+  {{> packages}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="packages">
+  <ul>
+    {{#each package}}
+      <li>
+        <a href="{{MeteorRepoTree}}/{{this}}">
+          {{this}}
+        </a>
+      </li>
+    {{/each}}
+  </ul>
 </template>
