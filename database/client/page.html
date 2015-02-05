@@ -1,0 +1,19 @@
+<body>
+  {{> list}}
+</body>
+
+<template name="list">
+  <input placeholder="Search" type="text"/>
+  <section>
+    {{#each comedian}}
+      <div>
+        <p>{{name}}</p>
+        {{#if picture.data.url}}
+          <img src={{picture.data.url}}>
+        {{else}}
+          <p>No picture</p>
+        {{/if}}
+      </div>
+    {{/each}}
+  </section>
+</template>

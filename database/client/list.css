@@ -1,0 +1,45 @@
+
+/*
+ * some spice here
+ */
+
+* {
+  transition: 0.45
+  transition-property: width;
+}
+
+body {
+  background: #222;
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+div {
+  position: relative;
+  padding: 10px;
+}
+
+p {
+  position: absolute;
+  top: 75px;
+  left: 50px;
+
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 16px;
+}
