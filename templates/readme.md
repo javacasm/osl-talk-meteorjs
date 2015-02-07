@@ -1,15 +1,9 @@
 
- Templates can only be used on the client for now
- since template engine "Blaze" uses the DOM.
+ # Templates
 
- They are defined in html form using handlerbars-like
- syntax and have extended capabilities through the global
- UI package.
+ They are defined in html form using Spacebars, a template language inspirated by [handlerbars](handlebarsjs.com) which similar syntax but  extended capabilities.
 
- The way it works is that any html file located
- in client/ will be pre-compiled and sent to the client
- using the definition you gave in this file.
+The way it works is that any file with a `html` extension will be pre-compiled and sent to the client. Well, not any file with this extension. Files placed at /private or /public will not be treated as such. [Read more about file loading in Meteor](http://docs.meteor.com/#/full/structuringyourapp).
 
- You also could theoretically define the template in /private
- and use it with the Blaze package that is also available
- globally. 
+ - [Official docs](http://docs.meteor.com/#/full/templates_api)
+ - [Spacebars docs](https://github.com/meteor/meteor/blob/devel/packages/spacebars/README.md)

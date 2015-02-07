@@ -1,10 +1,3 @@
-//
-// Session is a localStorage backed reactive key-value store
-// works hand in hand with deps, although it can be used
-// as a trigger for other computations
-//
-
-
 if (Meteor.isClient) {
   //
   // We wrap the code in Meteor.startup

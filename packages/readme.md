@@ -1,31 +1,34 @@
+- [Official docs](http://docs.meteor.com/#/full/usingpackages)
+
 #### Meteor has its own ecosystem of packages
 
-Some are already there and another you have to add them or, better said, install them. Like you would do with a [npm](https://npmjs.org) package
+There is, like `npm` is for [nodejs](https://nodejs.org), a package manager for Meteor. But it is integrated already with the Meteor command line. That is:
+ - `meteor add <package-name>`
+ - `meteor remove <package-name>`
+ - `meteor update <package-name>`
 
-Add a package to your project. Using the command line:
-
-    $ meteor add <package-name>
+Some are already there and another you have to add them or, better said, install them.
+ - [Packages bundled with Meteor](
+      github.com/meteor/meteor/tree/devel/packages
+   )
+ - Avaliable packages available through the [atmosphere website](atmospherejs.com)
 
 Most of the packages work in the client and in the server,
 but others don't.
 
-There is, like `npm` is for [nodejs](https://nodejs.org), a package manager for Meteor, you can search packages in the [atmosphere website](atmospherejs.com). When you install a package it goes to the `packages` folder on the main directory of the project. So, say you installed `bootstrap-3` with
+When you install a package it goes to the `packages` folder on the main directory of the project. So, say you installed `bootstrap-3` with
 
     $ meteor add mrt:bootstrap-3
 
-which is available in the [atmosphere website](atmospherejs.com/?q=bootstrap-3) website
+will be installed at packages/boostrap-3.
 
-Packages that comes with meteor are here:
- - [github.com/meteor/meteor/tree/devel/packages](
-    github.com/meteor/meteor/tree/devel/packages
-   )
-
-From those you can see the ones that are come by default in this file of
-your project ".meteor/packages"
+By default, a Meteor application comes with these packages
 
 meteor-platform
 autopublish
 insecure
+
+You can find them in ".meteor/packages" at your project's folder.
 
 The first is a bundle of the basic, or normally needed,
 packages. You can see them in the "package.js" of this folder

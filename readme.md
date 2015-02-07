@@ -1,13 +1,12 @@
-> This repository was in origin material to give a talk in the [OSL of the University of Granada](http://osl.ugr.es) guided by [@JJ](https://github.com/JJ), he hooked all of us and showed us the [power of a commit](https://github.com/JJ/top-github-users-data/issues/2).
+> This repository was in origin material to give a talk in the [OSL of the University of Granada](http://osl.ugr.es). Talk hosted by [@JJ](https://github.com/JJ) who had hooked all of us by showing the [power of a commit](https://github.com/JJ/top-github-users-data/issues/2).
 
-> Now the aim is that it is for **you**. To play and learn things about Meteor.js, node.js, JavaSript and whatever see fit.
+> Now the aim is that it is for **you**. To play, learn things about Meteor.js, node.js, JavaSript and whatever you see fit.
 
-> Go have fun already
-
+> Go have fun already!
 
 # Welcome stranger!
 
-Here you'll find an overview of [Meteor.js](http://www.meteor.com), a platform JavaScript applications that uses [node.js](http://nodejs.org) and the browser with the same ease.
+Here you'll find an overview of [Meteor.js](http://www.meteor.com), a platform to build JavaScript applications that uses [node.js](http://nodejs.org) and the browser (or phone) with the same ease.
 
 Quoting their documentation:
 
@@ -23,19 +22,26 @@ Linux or OS X
 
     curl https://install.meteor.com/ | sh
 
-
 For windows, there is an [installer](http://win.meteor.com)
 
 2.- Clone this repo
 
     git clone https://github.com/github-users-grx/osl-talk-meteorjs
 
-3.- Run a meteor app.
+3.- Run one of the meteor apps
 
-Each folder is a Meteor application with a minimal documentation. Each of which shows vaguely  the main components of Meteor. So go to one folder and do
+Each folder is a Meteor application with a minimal documentati. So go to one folder and do
 
     meteor
 
 4.- Play with it
 
 Write some code, broke the app and see what's wrong. If you want to know more [create an issue](https://github.com/github-users-grx/osl-talk-meteorjs/issues/new).
+
+# Meteor docs
+
+Meteor has [really good documentation](http://docs.meteor.com). Go check them out.
+
+# Node.js docs
+
+Meteor is written in [node.js](http://nodejs.org) server side. So you may find also useful [nodejs documentation](http://nodejs.org/api)
