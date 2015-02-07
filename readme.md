@@ -30,18 +30,26 @@ For windows, there is an [installer](http://win.meteor.com)
 
 3.- Run one of the meteor apps
 
-Each folder is a Meteor application with a minimal documentati. So go to one folder and do
+Each folder is a Meteor application with minimal documentation. Choose a folder and do
 
     meteor
 
 4.- Play with it
 
-Write some code, broke the app and see what's wrong. If you want to know more [create an issue](https://github.com/github-users-grx/osl-talk-meteorjs/issues/new).
+Write some code, break the app and see what's wrong. If you want to know more [create an issue](https://github.com/github-users-grx/osl-talk-meteorjs/issues/new) or come chat in the [gitter github-users-grx/changelog](https://gitter.im/github-users-grx/changelog) room.
 
-# Meteor docs
+## Documentation
+### Meteor docs
 
 Meteor has [really good documentation](http://docs.meteor.com). Go check them out.
 
-# Node.js docs
+### node.js docs
 
-Meteor is written in [node.js](http://nodejs.org) server side. So you may find also useful [nodejs documentation](http://nodejs.org/api)
+Meteor is written in [node.js](http://nodejs.org) server side. So you may find
+also useful [nodejs documentation](http://nodejs.org/api),
+
+### node-fibers
+
+Meteor uses [node-fibers](https://github.com/laverdet/node-fibers) to make
+asynchronous calls seem synchronous. You will need this if you want to understand
+whats going on under the hood.
