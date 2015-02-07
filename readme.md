@@ -1,3 +1,10 @@
+> This repository was in origin material to give a talk in the [OSL of the University of Granada](http://osl.ugr.es) guided by [@JJ](https://github.com/JJ), he hooked all of us and showed us the [power of a commit](https://github.com/JJ/top-github-users-data/issues/2).
+
+> Now the aim is that it is for **you**. To play and learn things about Meteor.js, node.js, JavaSript and whatever see fit.
+
+> Go have fun already
+
+
 # Welcome stranger!
 
 Here you'll find an overview of [Meteor.js](http://www.meteor.com), a platform JavaScript applications that uses [node.js](http://nodejs.org) and the browser with the same ease.
